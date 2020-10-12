@@ -18,9 +18,12 @@
 .secondary {
   color: var(--secondary);
 }
-.background {
-  color: var(--background);
-}
 .highlight {
   color: var(--highlight);
+}
+.contrast {
+  color: var(--contrast);
+}
+.background {
+  color: var(--background);
 }

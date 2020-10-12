@@ -1,9 +1,13 @@
 :root {
-  --primary: #303030;
-  --secondary: #5a5a5a;
-  --highlight: #e2e2e2;
-  --background: #bfbfbf;
-  --contrast: grey;
+  --primary: #fafafa;
+  --secondary: #a4a4a4;
+  --highlight: #282828;
+  --background: #1c1c1c;
+  --contrast: #191919;
+}
+
+* {
+  color: var(--primary);
 }
 
 body {
