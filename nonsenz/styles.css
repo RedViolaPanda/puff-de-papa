@@ -1,0 +1,26 @@
+.rachmaninoff-image {
+  height: 40vh;
+}
+
+.palette {
+  display: flex;
+}
+.palette div {
+  width: 100px;
+  height: 300px;
+  background-color: currentColor;
+  margin-right: 0.5em;
+}
+
+.primary {
+  color: var(--primary);
+}
+.secondary {
+  color: var(--secondary);
+}
+.background {
+  color: var(--background);
+}
+.highlight {
+  color: var(--highlight);
+}
