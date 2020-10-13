@@ -1,9 +1,27 @@
+@font-face {
+  font-family: 'Inria Serif';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/InriaSerif-Regular.woff2') format('woff2'),
+    url('/assets/fonts/InriaSerif-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/InriaSans-Regular.woff2') format('woff2'),
+    url('/assets/fonts/InriaSans-Regular.woff') format('woff');
+}
+
 :root {
   --primary: #fafafa;
   --secondary: #a4a4a4;
   --highlight: #282828;
   --background: #1c1c1c;
   --contrast: #191919;
+  --font-text: 'Inria Sans', sans-serif;
+  --font-heading: 'Inria Serif', sans-serif;
 }
 
 * {
@@ -14,6 +32,7 @@ body {
   background-color: var(--background);
   padding: 0;
   margin: 0;
+  font-family: var(--font-text);
 }
 
 header {
@@ -40,4 +59,14 @@ h5,
 h6,
 ul {
   margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header {
+  font-family: var(--font-heading);
 }
