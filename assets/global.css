@@ -73,7 +73,21 @@ header {
   font-family: var(--font-heading);
 }
 
+/** page layout */
+
+nav,
+footer,
+header,
+main {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 /** navbar */
+
+header nav {
+  padding-left: 0;
+}
 
 nav ul {
   list-style: none;
@@ -82,6 +96,7 @@ nav ul {
 }
 
 nav ul li {
+  padding-left: 0;
   margin-right: 0.5em;
 }
 
