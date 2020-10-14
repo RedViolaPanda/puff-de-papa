@@ -11,6 +11,7 @@
   background-position: bottom 1rem right 1rem;
   background-repeat: no-repeat;
   background-size: 400px;
+  pointer-events: none;
 }
 
 .home main {
