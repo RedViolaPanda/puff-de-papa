@@ -1,6 +1,6 @@
 {
-    "name": "Fluffy Phil",
-    "short_name": "Fluffy Phil",
+    "name": "Puff de Papa",
+    "short_name": "Puff de Papa",
     "icons": [
         {
             "src": "/android-chrome-192x192.png",
@@ -13,7 +13,7 @@
             "type": "image/png"
         }
     ],
-    "theme_color": "#ffffee",
-    "background_color": "#ffffee",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
     "display": "standalone"
 }
