@@ -2,16 +2,32 @@
   font-family: 'Inria Serif';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/InriaSerif-Regular.woff2') format('woff2'),
-    url('/assets/fonts/InriaSerif-Regular.woff') format('woff');
+  src: url('/assets/fonts/inriaserif-regular.woff2') format('woff2'),
+    url('/assets/fonts/inriaserif-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inria Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/InriaSans-Regular.woff2') format('woff2'),
-    url('/assets/fonts/InriaSans-Regular.woff') format('woff');
+  src: url('/assets/fonts/inriasans-regular.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/inriasans-italic.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/inriasans-bold.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-bold.woff') format('woff');
 }
 
 :root {
@@ -21,27 +37,24 @@
   --background: #1c1c1c;
   --contrast: #191919;
   --font-text: 'Inria Sans', sans-serif;
-  --font-heading: 'Inria Serif', sans-serif;
+  --font-heading: 'Inria Serif', serif;
 }
 
 * {
   color: var(--primary);
   font-family: var(--font-text);
-}
-
-body {
-  background-color: var(--background);
-  font-size: 18px;
   padding: 0;
   margin: 0;
 }
 
-header {
-  padding: 1rem 0;
+body {
+  background-color: var(--background);
+  font-size: 1.125rem;
+  min-width: 20em;
 }
 
 main {
-  min-height: calc(100vh - 52.7px - 36.7px);
+  min-height: calc(100vh - (18px + 2rem) - (15px + 2rem));
 }
 
 footer {
@@ -59,50 +72,55 @@ h2,
 h3,
 h4,
 h5,
-h6,
-ul {
-  margin: 0;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-header {
+h6 {
   font-family: var(--font-heading);
 }
 
-/** page layout */
+p {
+  margin-bottom: 1rem;
+}
 
-nav,
-footer,
+/** page layout */
 header,
-main {
+main,
+footer {
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 /** navbar */
-
-header nav {
-  padding-left: 0;
-}
-
 nav ul {
   list-style: none;
   display: flex;
-  padding-left: 0;
 }
 
-nav ul li {
-  padding-left: 0;
-  margin-right: 0.5em;
+nav li {
+  margin-right: 1rem;
 }
 
-nav ul li a {
+nav a {
+  display: inline-block;
   text-decoration: none;
   color: var(--primary);
+  padding: 1rem 0;
+  border-bottom: 0;
+}
+
+nav span {
   border-bottom: 0.5px solid var(--secondary);
+}
+
+/* utility classes */
+.sr-only {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+.focusable:focus {
+  background-color: var(--primary);
+  color: var(--contrast);
+  opacity: 1;
+  padding: 1rem;
+  pointer-events: initial;
 }
