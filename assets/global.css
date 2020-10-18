@@ -2,16 +2,32 @@
   font-family: 'Inria Serif';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/InriaSerif-Regular.woff2') format('woff2'),
-    url('/assets/fonts/InriaSerif-Regular.woff') format('woff');
+  src: url('/assets/fonts/inriaserif-regular.woff2') format('woff2'),
+    url('/assets/fonts/inriaserif-regular.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Inria Sans';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/InriaSans-Regular.woff2') format('woff2'),
-    url('/assets/fonts/InriaSans-Regular.woff') format('woff');
+  src: url('/assets/fonts/inriasans-regular.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  font-style: italic;
+  font-weight: 400;
+  src: url('/assets/fonts/inriasans-italic.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-italic.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Inria Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('/assets/fonts/inriasans-bold.woff2') format('woff2'),
+    url('/assets/fonts/inriasans-bold.woff') format('woff');
 }
 
 :root {
