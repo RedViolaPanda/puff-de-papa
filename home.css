@@ -25,6 +25,11 @@ p {
   font-size: 1.1em;
 }
 
+.intro {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
 .intro div {
   margin-top: 2rem;
   text-align: right;
