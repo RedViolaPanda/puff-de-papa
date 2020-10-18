@@ -45,35 +45,25 @@
   </head>
 
   <body>
-    <header>
-      <nav>
-        <ul>
-          <li><a href="/">Home</a></li>
-          <li><a href="#">Notes</a></li>
-          <li><a href="#">Discography</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
+    <a href="#main" class="sr-only focusable">Skip to main content</a> 
+    <nav>
+      <ul>
+        <li><a href="/"><span>Home</span></a></li>
+        <li><a href="/notes"><span>Notes</span></a></li>
+        <li><a href="/discography"><span>Discography</span></a></li>
+      </ul>
+    </nav>
+    <main id="main">
       <h1>Style Guide</h1>
       <!-- todo: create content for this page -->
       <article>
-        <p>
-          This site was created by <a href="https://fluffyphil.org/nonsenz/">Nonsen & Nonsen</a>,
-          inspired by and tributing to
-          <a href="https://en.wikipedia.org/wiki/Sergei_Rachmaninoff">Sergei Rachmaninoff</a>.
-        </p>
+        <p>This site was created by <a href="https://fluffyphil.org/nonsenz/">Nonsen & Nonsen</a>, inspired by and a tribute to <a href="https://en.wikipedia.org/wiki/Sergei_Rachmaninoff">Sergei Rachmaninoff</a>.</p>
       </article>
       <section>
-        <img
-          class="rachmaninoff-image"
-          src="https://s.wsj.net/public/resources/images/B3-BU347_rachma_OR_20180917141020.jpg"
-          alt="Portrait of Sergei Rachmaninoff"
-        />
-        <small>
-          <p>Composer and pianist Sergei Rachmaninoff c. 1920s.</p>
-          <p>Photo: Corbis/Getty Images</p>
-        </small>
+        <figure>
+          <img class="rachmaninoff-image" src="images/rachmaninoff.jpg" alt="Sergei Rachmaninoff leaning over a piano reading a newspaper">
+          <figcaption><small>Composer and pianist Sergei Rachmaninoff c. 1920s.</small><br><small>Photo: Corbis/Getty Images</small></figcaption>
+        </figure>
       </section>
       <section class="palette">
         <div class="primary"></div>
