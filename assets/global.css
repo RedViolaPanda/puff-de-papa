@@ -81,7 +81,7 @@ p {
 }
 
 /** page layout */
-nav,
+header,
 main,
 footer {
   padding-left: 1rem;
