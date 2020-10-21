@@ -31,13 +31,34 @@
 }
 
 :root {
-  --primary: #fafafa;
-  --secondary: #a4a4a4;
-  --highlight: #282828;
-  --background: #1c1c1c;
-  --contrast: #191919;
+  --shade1: #fafafa;
+  --shade2: #a4a4a4;
+  --shade3: #282828;
+  --shade4: #1c1c1c;
+  --shade5: #191919;
   --font-text: 'Inria Sans', sans-serif;
   --font-heading: 'Inria Serif', serif;
+}
+
+body {
+  --background: var(--shade1);
+  --primary: var(--shade5);
+  --secondary: var(--shade4);
+  --hint: var(--shade2); /** todo: needs adjustment */
+  --contrast-background: var(--shade5);
+  --contrast-foreground: var(--shade1);
+  --contrast-secondary: var(--shade2);
+  --contrast-hint: var(--shade3);
+}
+
+body[data-theme='dark'] {
+  --background: var(--shade4);
+  --primary: var(--shade1);
+  --secondary: var(--shade2);
+  --hint: var(--shade3);
+  --contrast-background: var(--shade1);
+  --contrast-foreground: var(--shade5);
+  --contrast-secondary: var(--shade4);
 }
 
 * {
@@ -118,7 +139,7 @@ nav span {
 
 .focusable:focus {
   background-color: var(--primary);
-  color: var(--contrast);
+  color: var(--contrast-foreground);
   opacity: 1;
   padding: 1rem;
   pointer-events: initial;
