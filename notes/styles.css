@@ -36,7 +36,7 @@
 }
 
 #main a {
-  border-bottom: 1px solid var(--highlight);
+  border-bottom: 1px solid var(--hint);
 }
 
 #main .mw-editsection,
@@ -48,7 +48,13 @@
   padding: 0.5rem 1rem;
 }
 
-div[role='note'] {
-  background-color: var(--highlight);
+#main div[role='note'] {
+  background-color: var(--contrast-background);
+  color: var(--contrast-foreground);
   padding: 0.5rem;
+}
+
+#main div[role='note'] a {
+  color: var(--contrast-secondary);
+  border-bottom: 1px solid var(--contrast-hint);
 }

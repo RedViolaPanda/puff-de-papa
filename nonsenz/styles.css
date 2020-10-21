@@ -17,18 +17,18 @@ figure {
   margin-right: 0.5em;
 }
 
-.primary {
-  color: var(--primary);
+.shade1 {
+  color: var(--shade1);
 }
-.secondary {
-  color: var(--secondary);
+.shade2 {
+  color: var(--shade2);
 }
-.highlight {
-  color: var(--highlight);
+.shade3 {
+  color: var(--shade3);
 }
-.contrast {
-  color: var(--contrast);
+.shade4 {
+  color: var(--shade4);
 }
-.background {
-  color: var(--background);
+.shade5 {
+  color: var(--shade5);
 }
